@@ -1,94 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LP - new</title>
-    <link rel="stylesheet" href="style.css">    
-    <link rel="icon" type="image/png" href="images/ico.webp">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LP - new</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/ico.webp">
 </head>
+
 <body>
-    <header class="headerArea">
-        <div class="logoArea"><a href="#"><img src="./images/logo1.avif" alt="logo"></a></div>
-        <nav class="menu-navegacao">
-            <ul>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Depoimentos</a></li>
-              <li><a href="#">Comprar</a></li>
-              <li><a href="#">Contato</a></li>
-            </ul>
-          </nav>
-    </header>
+  <header class="headerArea">
+    <div class="logoArea"><img src="./images/logo.png" alt="logo"></a></div>
 
-    <main class="mainArea">
-        <div class="bannerArea">
-            <img src="./images/banner.jpeg"></div>
-    
+    <div class="bannerAreaMobile">
+      <!-- From Uiverse.io by pathikcomp -->
+      <label class="menu-navegacao-mobile">
+        Menu
+        <input class="inp" checked="" type="checkbox" />
+        <div class="bar">
+          <span class="top bar-list"></span>
+          <span class="middle bar-list"></span>
+          <span class="bottom bar-list"></span>
         </div>
-
-        <section class="sobreArea">
-          <div class="sobre">
-            <h2>Sobre</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-                tincidunt nunc. Sed euismod, nulla eget aliquet faucibus, nisl
-                nunc aliquam nunc, in gravida nunc augue quis eros. Nulla
-                facilisi. Nullam vel diam velit. Sed in nulla id massa tincidunt
-                vestibulum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-                tincidunt nunc. Sed euismod, nulla eget aliquet faucibus, nisl
-                nunc aliquam nunc, in gravida nunc augue quis eros. Nulla
-                facilisi. Nullam vel diam velit. Sed in nulla id massa tincidunt
-                vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-                tincidunt nunc. Sed euismod, nulla eget aliquet faucibus, nisl
-                nunc aliquam nunc, in gravida nunc augue quis eros. Nulla
-                facilisi. Nullam vel diam velit. Sed in nulla id massa tincidunt
-                vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-                tincidunt nunc. Sed euismod, nulla eget aliquet faucibus, nisl
-                nunc aliquam nunc, in gravida nunc augue quis eros. Nulla
-                facilisi. Nullam vel diam velit. Sed in nulla id massa tincidunt
-                vestibulum.
-            </p>
-          </div>
-
+        <section class="menu-container">
+          <div class="menu-list">Sobre</div>
+          <div class="menu-list">Depoimentos</div>
+          <div class="menu-list">Comprar</div>
+          <div class="menu-list">Contato</div>
         </section>
+      </label>
 
-        <div class="depoimentosArea">
-            <section class="depoimentos">
-                <h2>Depoimentos</h2>
-    
-                <div class="depoimentosContainer">
-                    <div class="depoimento">
-                        <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-                            tincidu..."
-                        </p>
-                        <span>Cliente 1</span>
-                    </div>
-                <div class="depoimentosContainer">
-                    <div class="depoimento">
-                        <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-                            tincidu..."
-                        </p>
-                        <span>Cliente 1</span>
-                    </div>              
-            </section>
-            <section class="compre-aqui">
-                <h2>Compre aqui</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-                  tincidunt nunc. Sed euismod, nulla eget aliquet faucibus, nisl
-                  nunc aliquam nunc, in gravida nunc augue quis eros.
-                </p>
-                <a href="#" class="btn btn-primary">Comprar agora</a>
-              </section>
-        </div>
-
-    </main>
+    </div>
 
 
-   
-    
+    <nav class="menu-navegacao">
+      <ul>
+        <li class="neonlist"><a href="#sobreArea">Sobre</a></li>
+        <li class="neonlist"><a href="#">Depoimentos</a></li>
+        <li class="neonlist"><a href="#">Comprar</a></li>
+        <li class="neonlist"><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+
+
+
+  </header>
+
+  <main class="mainArea">
+
+    <!-- menudesktop -->
+    <div class="bannerArea">
+      <div class="banner">
+        <img src="./images/banner1.jpeg" alt="banner1">
+        <img src="./images/banner2.png" alt="banner2">
+        <img src="./images/banner3.png" alt="banner3">
+        <img src="./images/banner4.png" alt="banner4">
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+
+    <!-- menumobile -->
+
+
+
+    <section id="sobreArea">
+      <div class="sobre">
+        <h2>Sobre</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+          tincidunt nunc. Sed euismod, nulla eget aliquet faucibus, nisl
+          nunc aliquam nunc, in gravida nunc augue quis eros. Nulla
+          facilisi. Nullam vel diam velit. Sed in nulla id massa tincidunt
+          vestibulum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+          tincidunt nunc. Sed euismod, nulla eget aliquet faucibus, nisl
+          nunc aliquam nunc, in gravida nunc augue quis eros. Nulla
+          facilisi. Nullam vel diam velit. Sed in nulla id massa tincidunt
+          vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+          tincidunt nunc. Sed euismod, nulla eget aliquet faucibus, nisl
+          nunc aliquam nunc, in gravida nunc augue quis eros. Nulla
+          facilisi. Nullam vel diam velit. Sed in nulla id massa tincidunt
+          vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+          tincidunt nunc. Sed euismod, nulla eget aliquet faucibus, nisl
+          nunc aliquam nunc, in gravida nunc augue quis eros. Nulla
+          facilisi. Nullam vel diam velit. Sed in nulla id massa tincidunt
+          vestibulum.
+        </p>
+      </div>
+
+    </section>
+
+    <div class="depoimentosArea">
+      <section class="depoimentos">
+        <h2>Depoimentos</h2>
+
+        <div class="depoimentosContainer">
+          <div class="depoimento">
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+              tincidu..."
+            </p>
+            <span>Cliente 1</span>
+          </div>
+          <div class="depoimentosContainer">
+            <div class="depoimento">
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+                tincidu..."
+              </p>
+              <span>Cliente 1</span>
+            </div>
+      </section>
+      <section class="compre-aqui">
+        <h2>Compre aqui</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+          tincidunt nunc. Sed euismod, nulla eget aliquet faucibus, nisl
+          nunc aliquam nunc, in gravida nunc augue quis eros.
+        </p>
+        <button class="neon">Comprar</button>
+      </section>
+    </div>
+
+    <div class="container">
+      <h1>Meu Mapa</h1>
+      <div id="map" style="width: 500px; height: 300px;"></div>
+    </div>
+
+  </main>
+
+
+
+
 </body>
+<script>
+  let index = 0;
+  const images = document.querySelectorAll('.banner img');
+  const totalImages = images.length;
+  let interval = setInterval(nextSlide, 3000); // Alterna a cada 3s
+
+  function showSlide(i) {
+    images.forEach((img, idx) => {
+      img.style.opacity = "0"; // Oculta todas as imagens
+    });
+    images[i].style.opacity = "1"; // Torna a imagem atual visível
+  }
+
+  function nextSlide() {
+    index = (index + 1) % totalImages;
+    showSlide(index);
+  }
+
+  function prevSlide() {
+    index = (index - 1 + totalImages) % totalImages;
+    showSlide(index);
+  }
+
+  function resetInterval() {
+    clearInterval(interval);
+    interval = setInterval(nextSlide, 3000); // Reinicia temporizador
+  }
+
+  document.querySelector('.prev').addEventListener('click', () => {
+    prevSlide();
+    resetInterval();
+  });
+
+  document.querySelector('.next').addEventListener('click', () => {
+    nextSlide();
+    resetInterval();
+  });
+
+  showSlide(index); // Exibe a primeira imagem ao carregar
+</script>
+
+
+
 </html>
