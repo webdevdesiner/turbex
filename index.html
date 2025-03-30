@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
   <title>LP - new</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="images/ico.webp">
@@ -11,10 +16,12 @@
 
 <body>
   <header class="headerArea">
-    <div class="logoArea"><img src="./images/logo.png" alt="logo"></a></div>
+    <div class="logoArea" data-aos="fade-down" data-aos-delay="1300"><img src="./images/logo.png" alt="logo"></a></div>
 
-    <div class="bannerAreaMobile">
-      <!-- From Uiverse.io by pathikcomp -->
+    <div class="bannerAreaMobile" data-aos="fade-up" data-aos-delay="1300">
+
+
+      <!-- menu mobile -->
       <label class="menu-navegacao-mobile">
         Menu
         <input class="inp" checked="" type="checkbox" />
@@ -33,13 +40,13 @@
 
     </div>
 
-
+    <!-- menu desktop -->
     <nav class="menu-navegacao">
       <ul>
-        <li class="neonlist"><a href="#sobreArea">Sobre</a></li>
-        <li class="neonlist"><a href="#">Depoimentos</a></li>
-        <li class="neonlist"><a href="#">Comprar</a></li>
-        <li class="neonlist"><a href="#">Contato</a></li>
+        <li class="neonlist" data-aos="fade-up" data-aos-delay="300"><a href="#sobreArea">Sobre</a></li>
+        <li class="neonlist" data-aos="fade-up" data-aos-delay="400"><a href="#">Depoimentos</a></li>
+        <li class="neonlist" data-aos="fade-up" data-aos-delay="500"><a href="#">Comprar</a></li>
+        <li class="neonlist" data-aos="fade-up" data-aos-delay="600"><a href="#">Contato</a></li>
       </ul>
     </nav>
 
@@ -49,51 +56,77 @@
 
   <main class="mainArea">
 
-    <!-- menudesktop -->
+    <!-- area de banners do topo -->
     <div class="bannerArea">
       <div class="banner">
-        <img src="./images/banner1.jpeg" alt="banner1">
-        <img src="./images/banner2.png" alt="banner2">
-        <img src="./images/banner3.png" alt="banner3">
+        <img src="./images/explosion2.png" alt="banner1">
+        <!-- <img src="./images/banner1.png" alt="banner1">  -->
+        <img src="./images/explosion3.png" alt="banner2">
+        <img src="./images/explosion4.png" alt="banner2">
+
+
+        <!-- <img src="./images/banner2.png" alt="banner2"> -->
+        <!-- <img src="./images/banner3.png" alt="banner3"> -->
         <img src="./images/banner4.png" alt="banner4">
       </div>
       <button class="prev" onclick="prevSlide()">&#10094;</button>
       <button class="next" onclick="nextSlide()">&#10095;</button>
     </div>
 
-
-    <!-- menumobile -->
-
-
-
-    <section id="sobreArea">
+    <!-- area com texto sobre a turbex -->
+    <section id="sobreArea" data-aos="fade-left" data-aos-delay="2300">
       <div class="sobre">
         <h2>Sobre</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-          tincidunt nunc. Sed euismod, nulla eget aliquet faucibus, nisl
-          nunc aliquam nunc, in gravida nunc augue quis eros. Nulla
-          facilisi. Nullam vel diam velit. Sed in nulla id massa tincidunt
-          vestibulum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-          tincidunt nunc. Sed euismod, nulla eget aliquet faucibus, nisl
-          nunc aliquam nunc, in gravida nunc augue quis eros. Nulla
-          facilisi. Nullam vel diam velit. Sed in nulla id massa tincidunt
-          vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-          tincidunt nunc. Sed euismod, nulla eget aliquet faucibus, nisl
-          nunc aliquam nunc, in gravida nunc augue quis eros. Nulla
-          facilisi. Nullam vel diam velit. Sed in nulla id massa tincidunt
-          vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-          tincidunt nunc. Sed euismod, nulla eget aliquet faucibus, nisl
-          nunc aliquam nunc, in gravida nunc augue quis eros. Nulla
-          facilisi. Nullam vel diam velit. Sed in nulla id massa tincidunt
-          vestibulum.
+        <h3>Sobre Nós:</h3>
+        <p>
+          A Turbex é uma empresa especializada em suplementação esportiva, oferecendo produtos de alta qualidade para
+          atletas e entusiastas do fitness. Com uma linha completa de produtos, incluindo creatina, pré-treino,
+          glutamina, cafeína e BCAA, garantimos o suporte necessário para alcançar seus objetivos de desempenho. avalie
+          a possibilidade de citar ou nao os produtos e se ja incluímos os futuros que vão chegar
+        </p><br>
+        <h3>Nossa História:</h3>
+        <p>A Turbex foi criada e é mentorada pela Pronutry, uma referência no setor de nutrição e suplementação, com
+          quase 20 anos de expertise. Essa parceria reforça nosso compromisso com a qualidade e a inovação.</p><br>
+        <h3>Nosso Compromisso:</h3>
+        <p>
+          Na Turbex, acreditamos que cada atleta merece o melhor. Nossos produtos são desenvolvidos com ingredientes
+          selecionados e passam por rigorosos testes de qualidade para garantir eficácia e segurança.
+        </p><br>
+        </p>
+
+        Junte-se a Nós: Seja parte da comunidade Turbex e leve seu treino para o próximo nível!
         </p>
       </div>
 
     </section>
 
-    <div class="depoimentosArea">
+
+    <!-- Area de produtos para venda -->
+    <section class="produtosArea">
+      <h2>Produtos</h2>
+      <div class="produtosContainer">
+        <div class="produto">
+          <img src="./images/creatina.png" alt="creatina">
+          <h3>Creatina</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac 
+            tincidunt nunc. Sed euismod, nulla eget aliquet faucibus, nisl 
+            nisl.
+          </p>
+          <button>Comprar</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="depoimentosArea" data-aos="zoom-in" data-aos-delay="1000">
       <section class="depoimentos">
         <h2>Depoimentos</h2>
 
@@ -125,57 +158,17 @@
       </section>
     </div>
 
-    <div class="container">
-      <h1>Meu Mapa</h1>
-      <div id="map" style="width: 500px; height: 300px;"></div>
-    </div>
+
 
   </main>
 
 
-
+  <script src="script.js"></script>
 
 </body>
-<script>
-  let index = 0;
-  const images = document.querySelectorAll('.banner img');
-  const totalImages = images.length;
-  let interval = setInterval(nextSlide, 3000); // Alterna a cada 3s
 
-  function showSlide(i) {
-    images.forEach((img, idx) => {
-      img.style.opacity = "0"; // Oculta todas as imagens
-    });
-    images[i].style.opacity = "1"; // Torna a imagem atual visível
-  }
 
-  function nextSlide() {
-    index = (index + 1) % totalImages;
-    showSlide(index);
-  }
 
-  function prevSlide() {
-    index = (index - 1 + totalImages) % totalImages;
-    showSlide(index);
-  }
-
-  function resetInterval() {
-    clearInterval(interval);
-    interval = setInterval(nextSlide, 3000); // Reinicia temporizador
-  }
-
-  document.querySelector('.prev').addEventListener('click', () => {
-    prevSlide();
-    resetInterval();
-  });
-
-  document.querySelector('.next').addEventListener('click', () => {
-    nextSlide();
-    resetInterval();
-  });
-
-  showSlide(index); // Exibe a primeira imagem ao carregar
-</script>
 
 
 

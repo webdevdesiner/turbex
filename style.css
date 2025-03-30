@@ -274,6 +274,140 @@ body {
     transform-origin: bottom right;
     transform: translateY(calc(var(--transform) * -1)) rotate(45deg);
   }
+
+
+
+  
+/* estilização do banner topo  */
+.bannerArea {
+  width: 90%;
+  height: 400px; /* Defina uma altura adequada */
+  overflow: hidden;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  height: 100%; /* Certifique-se de que o container tem altura total */
+  display: flex;
+  justify-content: center; /* Alinha as imagens ao centro */
+  align-items: center; /* Alinha as imagens verticalmente */
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: auto; /* Ajuste a altura para manter a proporção da imagem */
+  position: absolute;
+  opacity: 0; /* Começa com opacidade 0 para fazer o fade */
+  transition: opacity 1s ease-in-out; /* Transição suave */
+  animation: fade 6s infinite; /* Animação de fade */
+
+}
+
+
+
+/* A primeira imagem começa com opacidade 1 */
+.banner img:first-child {
+  opacity: 1;
+}
+
+/* Botões de navegação */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
+.banner:hover {
+  filter: drop-shadow(0 0 10px #ab8621);
+}
+
+
+
+
+
+
+/* estilização da area de texto sobre a turbex */
+
+#sobreArea {
+  width: 50%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  padding: 50px 0;
+}
+
+#sobreArea:hover   {
+  color: rgb(255, 219, 14);
+  filter: drop-shadow(0 0 10px #ffffff);
+}
+
+#sobreArea h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* estilização dos depoimentos */
+
+.depoimentosArea {  
+  color: rgb(255, 255, 255);
+}
+
+.depoimentosArea:hover {
+  filter: drop-shadow(0 0 2px #ab8621);
+}
+
+
+
+
+
+
+
+
+
+
+
   
 
 
@@ -315,7 +449,7 @@ body {
         background-color: rgb(82, 72, 6);
         padding: 3px 15px;
         border-radius: 10px;
-        z-index: 1;
+        z-index: 5;
         display: flex;
         align-items: center;
         height: 2.5rem;
@@ -325,96 +459,6 @@ body {
         justify-content: space-between;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* estilização do banner topo  */
-.bannerArea {
-    width: 90%;
-    height: 400px; /* Defina uma altura adequada */
-    overflow: hidden;
-    position: relative;
-    background-color: #000000;
-}
-
-.banner {
-    width: 100%;
-    height: 100%; /* Certifique-se de que o container tem altura total */
-    display: flex;
-    justify-content: center; /* Alinha as imagens ao centro */
-    align-items: center; /* Alinha as imagens verticalmente */
-    position: relative;
-}
-
-.banner img {
-    width: 100%;
-    height: auto; /* Ajuste a altura para manter a proporção da imagem */
-    position: absolute;
-    opacity: 0; /* Começa com opacidade 0 para fazer o fade */
-    transition: opacity 1s ease-in-out; /* Transição suave */
-}
-
-/* A primeira imagem começa com opacidade 1 */
-.banner img:first-child {
-    opacity: 1;
-}
-
-/* Botões de navegação */
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 24px;
-    z-index: 10;
-}
-
-.prev { left: 10px; }
-.next { right: 10px; }
-
-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-
-
-
-
-.banner:hover {
-    filter: drop-shadow(0 0 10px #ab8621);
-}
-
-
-
-
-
-
-
 
 
 
