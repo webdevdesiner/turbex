@@ -370,11 +370,18 @@ button:hover {
 }
 
 
+.containerCards {
+  width: 100%;
+  display: flex; /* ou block */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Para espaçamento entre os cards */
+}
 
 
 
 /* estilização do card de produtos */
-/* From Uiverse.io by ElSombrero2 */ 
+
 .card {
   overflow: visible;
   width: 30%;
@@ -478,18 +485,18 @@ button:hover {
 }
 
 .description {
-  box-shadow: 0px 0px 10px 5px #00000088;
+  box-shadow: 0px 0px 10px 5px #dab03188;
   width: 90%;
   height: 90%;
   padding: 10px;
   margin: auto;
-  background-color: #00000099;
-  backdrop-filter: blur(15px);
+  background-color: #000000c7;
+  backdrop-filter: blur(5px);
   border-radius: 5px;
 }
 
 .title {
-  font-size: 11px;
+  font-size: 15px;
   max-width: 100%;
   display: flex;
   justify-content: space-between;
@@ -518,47 +525,6 @@ button:hover {
   object-position: center;
 }
 
-.circle {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background-color: #ffbb66;
-  position: relative;
-  filter: blur(15px);
-  animation: floating 2600ms infinite linear;
-}
-
-#bottom {
-  background-color: #ff8866;
-  left: 50px;
-  top: 0px;
-  width: 150px;
-  height: 150px;
-  animation-delay: -800ms;
-}
-
-#right {
-  background-color: #ff2233;
-  left: 160px;
-  top: -80px;
-  width: 30px;
-  height: 30px;
-  animation-delay: -1800ms;
-}
-
-@keyframes floating {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(10px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-}
 
 
 
