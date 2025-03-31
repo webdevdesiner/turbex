@@ -857,4 +857,36 @@ body {
     cursor: pointer;
     justify-content: space-between;
   }
+
+  .card {
+    overflow: visible;
+    width: 100%;    
+  }
+
+
+  /* estilização do banner topo  */
+.bannerArea {
+  width: 90%;
+  height: 400px;
+  /* Defina uma altura adequada */
+  overflow: hidden;
+  position: relative;
+}
+
+.banner {
+  width: 300%;
+  margin-left: -200px;
+  /* height: 100%; */
+  /* Certifique-se de que o container tem altura total */
+  display: flex;
+  justify-content: center;
+  /* Alinha as imagens ao centro */
+  align-items: center;
+  /* Alinha as imagens verticalmente */
+  position: relative;
+}
+
+
+
+
 }
